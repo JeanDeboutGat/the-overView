@@ -7,22 +7,24 @@ import {MatToolbarModule} from "@angular/material/toolbar";
 import {RouterModule, Routes} from "@angular/router";
 import { NavigationBarComponent } from './navigation-bar/navigation-bar.component';
 import {MatIconModule} from "@angular/material/icon";
+import { HomeComponent } from './home/home.component';
+import {AppRoutingModule} from "./app-routing.module";
+import {MatDividerModule} from "@angular/material/divider";
 
 const appRoutes: Routes = [   {path:"", component: NavigationBarComponent}]
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    NavigationBarComponent
-  ],
+  declarations: [AppComponent, NavigationBarComponent, HomeComponent],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
     MatToolbarModule,
     RouterModule.forRoot(appRoutes),
-    MatIconModule
+    MatIconModule,
+    AppRoutingModule,
+    MatDividerModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
