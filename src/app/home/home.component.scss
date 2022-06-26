@@ -1,1 +1,33 @@
+.home-container {
+  display: flex;
+}
+
+.background {
+  flex: 2;
+  margin-top: 1em;
+}
+
+.description {
+  flex: 2;
+  align-self: center;
+  box-shadow: none;
+
+  .title {
+    font-size: 3.25em;
+    font-weight: 400;
+    margin-bottom: 1em;
+  }
+
+  .content {
+    font-size: 1.5em;
+    font-weight: 300;
+    margin-bottom: 1em;
+  }
+
+  .actions button {
+    font-size: 1.5em;
+    padding: 0.5em 1em;
+    margin-right: 1em;
+  }
+}
 

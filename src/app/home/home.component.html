@@ -1,1 +1,14 @@
-<p>home works!</p>
+<div class="home-container">
+  <div class="background">
+    <img src="assets/home-bg.png">
+  </div>
+
+  <mat-card class="description">
+    <mat-card-title [innerHTML]="titleText" class="title"></mat-card-title>
+    <mat-card-content [innerHTML]="descriptionText" class="content"></mat-card-content>
+    <mat-card-actions class="actions">
+      <button mat-flat-button color="primary" [innerHTML]="buttonText.login"></button>
+      <button mat-flat-button color="primary" [innerHTML]="buttonText.signup"></button>
+    </mat-card-actions>
+  </mat-card>
+</div>
