@@ -13,8 +13,12 @@ export class HomeComponent implements OnInit {
   constructor() {}
 
   ngOnInit(): void {
-    this.titleText = "<p>Learn New Skills</p>"
-    this.descriptionText = "<p>Discover various IT concepts, keep up</p> <p>with technology, share your ideas and </p> <p>questions with the community.</p>"
-    this.buttonText ={login:"Log in", signup:"Sign up"}
+    this.titleText = "<p style='font-size: 3rem'>Learn New Skills</p>";
+    this.descriptionText =
+      "<p style='font-size: 1.5rem'>Discover various IT concepts, keep up</p> <p style='font-size: 1.5rem'>with technology, share your ideas and </p> <p style='font-size: 1.5rem'>questions with the community.</p>";
+    this.buttonText = {
+      login: "<p style='font-size: 1.5rem; color: white'>Login</p>",
+      signup: "<p style='font-size: 1.5rem; color: white';>Sign in</p>",
+    };
   }
 }

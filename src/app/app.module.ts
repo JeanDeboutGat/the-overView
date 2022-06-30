@@ -12,13 +12,14 @@ import {AppRoutingModule} from "./app-routing.module";
 import {MatDividerModule} from "@angular/material/divider";
 import {MatCardModule} from "@angular/material/card";
 import {MatButtonModule} from "@angular/material/button";
-import { FormationComponent } from './formation/formation.component';
-import { FormationCardComponent } from './formation/formation-card/formation-card.component';
+import { FormationsComponent } from './formation/formations.component';
+import { FormationComponent } from './formation/formation/formation.component';
+import { SafeHtmlPipe } from './home/safe-html.pipe';
 
 const appRoutes: Routes = [   {path:"", component: NavigationBarComponent}]
 
 @NgModule({
-  declarations: [AppComponent, NavigationBarComponent, HomeComponent, FormationComponent, FormationCardComponent],
+  declarations: [AppComponent, NavigationBarComponent, HomeComponent, FormationsComponent, FormationComponent, SafeHtmlPipe],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,

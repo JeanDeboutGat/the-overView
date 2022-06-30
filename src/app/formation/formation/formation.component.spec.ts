@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { FormationCardComponent } from './formation-card.component';
+import { FormationComponent } from './formation.component';
 
 describe('FormationCardComponent', () => {
-  let component: FormationCardComponent;
-  let fixture: ComponentFixture<FormationCardComponent>;
+  let component: FormationComponent;
+  let fixture: ComponentFixture<FormationComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ FormationCardComponent ]
+      declarations: [ FormationComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(FormationCardComponent);
+    fixture = TestBed.createComponent(FormationComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

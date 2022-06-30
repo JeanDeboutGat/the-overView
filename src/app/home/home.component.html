@@ -1,14 +1,14 @@
-<div class="home-container">
-  <div class="background">
-    <img src="assets/home-bg.png">
+<div class="home-page">
+  <div class="background-image">
+    <img src="assets/home-bg.png" [ngStyle]="{'width.vw':50, 'height.vh':80}">
   </div>
 
   <mat-card class="description">
-    <mat-card-title [innerHTML]="titleText" class="title"></mat-card-title>
-    <mat-card-content [innerHTML]="descriptionText" class="content"></mat-card-content>
+    <mat-card-title [innerHTML]="titleText | safeHtml" class="title"></mat-card-title>
+    <mat-card-content [innerHTML]="descriptionText  | safeHtml" class="content"></mat-card-content>
     <mat-card-actions class="actions">
-      <button mat-flat-button color="primary" [innerHTML]="buttonText.login"></button>
-      <button mat-flat-button color="primary" [innerHTML]="buttonText.signup"></button>
+      <button mat-flat-button color="primary" [innerHTML]="buttonText.login | safeHtml"></button>
+      <button mat-flat-button color="primary" [innerHTML]="buttonText.signup | safeHtml"></button>
     </mat-card-actions>
   </mat-card>
 </div>

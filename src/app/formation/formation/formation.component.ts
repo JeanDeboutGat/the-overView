@@ -1,11 +1,11 @@
 import {Component, Input, OnInit} from '@angular/core';
 
 @Component({
-  selector: 'app-formation-card',
-  templateUrl: './formation-card.component.html',
-  styleUrls: ['./formation-card.component.scss']
+  selector: 'app-formation',
+  templateUrl: './formation.component.html',
+  styleUrls: ['./formation.component.scss']
 })
-export class FormationCardComponent implements OnInit {
+export class FormationComponent implements OnInit {
 
  @Input('title') titleText!: string;
  @Input() logo!: string;

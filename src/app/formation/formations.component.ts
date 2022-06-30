@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
-interface FormationCard {
+interface Formation {
   title: string;
   logo: string;
   content: string;
@@ -9,17 +9,17 @@ interface FormationCard {
 }
 
 @Component({
-  selector: 'app-formation',
-  templateUrl: './formation.component.html',
-  styleUrls: ['./formation.component.scss'],
+  selector: 'app-formations',
+  templateUrl: './formations.component.html',
+  styleUrls: ['./formations.component.scss'],
 })
-export class FormationComponent implements OnInit {
-  formationCards: FormationCard[] = [];
+export class FormationsComponent implements OnInit {
+  formations: Formation[] = [];
 
   constructor() {}
 
   ngOnInit(): void {
-    let formationCard: FormationCard = {
+    let formation: Formation = {
       title: 'Basic concepts of angular',
       logo: 'courseLogo',
       content:
@@ -29,8 +29,8 @@ export class FormationComponent implements OnInit {
     };
 
     for (let i = 0; i < 20; i++) {
-      this.formationCards.push(formationCard);
+      this.formations.push(formation);
     }
-    console.log(this.formationCards);
+    console.log(this.formations);
   }
 }

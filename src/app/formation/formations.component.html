@@ -1,0 +1,14 @@
+<div class="formations">
+  <div class="description">
+    <p>Various Concepts</p>
+    <p>Choose one of the technologie among
+      the list to learn more about it.
+    </p>
+  </div>
+  <app-formation *ngFor="let formation of formations" [title]="formation.title" [logo]="formation.logo"
+                 [content]="formation.content" [duration]="formation.duration"
+                 [durationLogo]="formation.duration"></app-formation>
+
+</div>
+
+

@@ -1,0 +1,24 @@
+.formations {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.formations app-formation {
+  margin: 1em;
+}
+
+.description {
+  width: 48vw;
+  padding: 4rem;
+}
+
+.description p:first-child {
+  font-size: 3rem;
+  padding-bottom: 1em;
+}
+
+.description p:nth-of-type(2) {
+  font-size: 1.5em;
+  font-weight: lighter;
+}
