@@ -12,7 +12,7 @@
   align-self: center;
   box-shadow: none;
 
-  .title{
+  .title {
     font-size: 3rem;
     font-weight: 400;
     margin-bottom: 1.5em;
@@ -28,6 +28,12 @@
     font-size: 1.5em;
     padding: 0.5em 1em;
     margin-right: 2em;
+
+    &:nth-of-type(2) {
+      background-color: white;
+      padding: 0.4em 1em;
+      border: 0.1rem solid blue !important;
+    }
   }
 }
 

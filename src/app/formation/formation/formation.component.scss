@@ -1,5 +1,5 @@
 .formation {
- max-width: 23vw;
+  max-width: 23vw;
 }
 
 .example-header-image {
@@ -19,5 +19,11 @@
 }
 
 .actions {
+  display: flex;
   font-size: 1.2em;
+
+  span {
+    align-self: center;
+    padding-left: 0.25em;
+  }
 }

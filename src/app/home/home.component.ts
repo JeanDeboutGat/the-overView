@@ -18,7 +18,7 @@ export class HomeComponent implements OnInit {
       "<p style='font-size: 1.5rem'>Discover various IT concepts, keep up</p> <p style='font-size: 1.5rem'>with technology, share your ideas and </p> <p style='font-size: 1.5rem'>questions with the community.</p>";
     this.buttonText = {
       login: "<p style='font-size: 1.5rem; color: white'>Login</p>",
-      signup: "<p style='font-size: 1.5rem; color: white';>Sign in</p>",
+      signup: "<p style='font-size: 1.5rem; color: #3f51b5'>Sign in</p>"
     };
   }
 }
