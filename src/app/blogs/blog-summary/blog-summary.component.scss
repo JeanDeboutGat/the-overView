@@ -1,0 +1,16 @@
+.blog-summary {
+  display: flex;
+}
+
+.example-header-image {
+  background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
+  background-size: cover;
+  display: block;
+  width: 30%;
+  height: auto;
+}
+
+.title-and-description__container{
+  width: 70%;
+  height: 100% ;
+}

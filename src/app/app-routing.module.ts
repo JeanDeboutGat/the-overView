@@ -1,14 +1,16 @@
 import { HomeComponent } from './home/home.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { FormationsComponent } from './formation/formations.component';
-import { FormationComponent } from './formation/formation/formation.component';
+import { FormationsComponent } from './formations/formations.component';
+import {BlogsComponent} from "./blogs/blogs.component";
+import {BlogDetailsComponent} from "./blogs/blog-details/blog-details.component";
 
 const routes: Routes = [
-  { path: '', component: HomeComponent },
+  { path: '', component: BlogsComponent },
   { path: 'home', component: HomeComponent },
   { path: 'formations', component: FormationsComponent },
-  { path: 'formation', component: FormationComponent },
+  { path: 'blogs', component: BlogsComponent },
+  { path: 'blog/:id', component: BlogDetailsComponent },
 ];
 
 @NgModule({

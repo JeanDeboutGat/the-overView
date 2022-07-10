@@ -1,0 +1,11 @@
+<div class="blog-details">
+  <div class="header">
+    <div class="title" [innerHTML]="blog.title
+     | StyleClass: 'font-size': '2rem'"></div>
+    <div class="date mat-caption"> Published: {{blog.date.toLocaleString('fr-FR')}}</div>
+  </div>
+
+  <img class="image" src="assets/home-bg.png">
+  <div class="content" [innerHTML]="blog.content"></div>
+
+</div>

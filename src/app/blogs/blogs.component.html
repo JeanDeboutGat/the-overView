@@ -1,0 +1,15 @@
+<mat-sidenav-container class="blogs-sidenav__container">
+  <mat-sidenav-content class="blogs">
+
+    <app-blog-summary class="app-blog" [routerLink]="['/blog',i]" *ngFor="let blog of blogs; let i = index"
+                      [title]="blog.title"
+                      [description]="blog.description"
+                      [image]="blog.image">
+    </app-blog-summary>
+  </mat-sidenav-content>
+
+  <mat-sidenav mode="side" position="end" opened class="blogs-side-nav">
+    <div [ngStyle]="{'background-color':'ghostwhite',height: '30vw','margin':'1em 0'}"></div>
+    <div [ngStyle]="{'background-color':'black',height: '35vw'}"></div>
+  </mat-sidenav>
+</mat-sidenav-container>

@@ -31,6 +31,5 @@ export class FormationsComponent implements OnInit {
     for (let i = 0; i < 20; i++) {
       this.formations.push(formation);
     }
-    console.log(this.formations);
   }
 }
