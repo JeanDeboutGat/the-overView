@@ -4,6 +4,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { FormationsComponent } from './formations/formations.component';
 import {BlogsComponent} from "./blogs/blogs.component";
 import {BlogDetailsComponent} from "./blogs/blog-details/blog-details.component";
+import {FeedbackComponent} from "./feedback/feedback.component";
 
 const routes: Routes = [
   { path: '', component: BlogsComponent },
@@ -11,6 +12,7 @@ const routes: Routes = [
   { path: 'formations', component: FormationsComponent },
   { path: 'blogs', component: BlogsComponent },
   { path: 'blog/:id', component: BlogDetailsComponent },
+  { path: 'feedback', component: FeedbackComponent },
 ];
 
 @NgModule({

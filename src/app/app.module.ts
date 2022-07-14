@@ -20,6 +20,10 @@ import { MatSidenavModule } from '@angular/material/sidenav';
 import { BlogSummaryComponent } from './blogs/blog-summary/blog-summary.component';
 import { BlogDetailsComponent } from './blogs/blog-details/blog-details.component';
 import { StyleClassPipe } from './utils/style-class-pipe';
+import { FeedbackComponent } from './feedback/feedback.component';
+import {MatFormFieldModule} from "@angular/material/form-field";
+import {MatInputModule} from "@angular/material/input";
+import {ReactiveFormsModule} from "@angular/forms";
 
 const appRoutes: Routes = [{ path: '', component: NavigationBarComponent }];
 
@@ -35,6 +39,7 @@ const appRoutes: Routes = [{ path: '', component: NavigationBarComponent }];
     BlogSummaryComponent,
     BlogDetailsComponent,
     StyleClassPipe,
+    FeedbackComponent,
   ],
   imports: [
     BrowserModule,
@@ -47,6 +52,9 @@ const appRoutes: Routes = [{ path: '', component: NavigationBarComponent }];
     MatCardModule,
     MatButtonModule,
     MatSidenavModule,
+    MatFormFieldModule,
+    MatInputModule,
+    ReactiveFormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

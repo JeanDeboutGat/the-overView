@@ -1,4 +1,5 @@
 import { Injectable, OnInit } from '@angular/core';
+import { FeedBack } from '../feedback/feedback.component';
 
 export interface Blog {
   title: string;
@@ -6,6 +7,7 @@ export interface Blog {
   content: string;
   image: string;
   date: Date;
+  feedbacks?: FeedBack[];
 }
 
 @Injectable({
@@ -27,6 +29,24 @@ export class BlogsService {
         ' At the other end poor code may results in increasing financial costs as the average developer spends 42% of their time dealing with technical debt and maintenance issues.`</p>',
       image: 'https://material.angular.io/assets/img/examples/shiba1.jpg',
       date: new Date(),
+      feedbacks: [
+        {
+          name: 'Yves Sheja',
+          message:
+            '<p>Thank you, it was helpful i found also that writting clean code is important because it reduces \n' +
+            'time you spend debuging. At the other end poor code may results in increasing financial costs\n' +
+            'as the average developer spends 42% of their time dealing with technical debt and\n' +
+            'maintenance issues. </p>',
+        },
+        {
+          name: 'Bob',
+          message:
+            '<p>Thank you, it was helpful i found also that writting clean code is important because it reduces \n' +
+            'time you spend debuging. At the other end poor code may results in increasing financial costs\n' +
+            'as the average developer spends 42% of their time dealing with technical debt and\n' +
+            'maintenance issues. </p>',
+        },
+      ],
     };
 
     for (let i = 0; i < 12; i++) {

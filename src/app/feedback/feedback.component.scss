@@ -1,0 +1,59 @@
+.feedback__section {
+  margin: 2rem auto;
+}
+
+.feedbacks-sorter {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  .line {
+    flex: 1;
+  }
+
+  .mat-flat-button {
+    border: solid 1px #424245;
+  }
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  margin: 2em 0;
+}
+
+mat-form-field {
+  margin-top: 1rem;
+}
+
+.send-button {
+  width: 6rem;
+  color: #ffffff;
+  margin-top: 1.5rem;
+  padding: 0.1em 1em;
+}
+
+.user-profile-icon {
+  background-image: url("./../../assets/profile-icon.png");
+  background-size: cover;
+}
+
+.reply-icon {
+  background-image: url("./../../assets/reply-icon.png");
+  background-size: cover;
+}
+
+.feedbacks {
+  margin: 2rem 0;
+}
+
+.feedback {
+  margin-bottom: 2rem;
+}
+
+.no-feedback-message {
+  text-align: center;
+  margin: 2rem 0;
+}

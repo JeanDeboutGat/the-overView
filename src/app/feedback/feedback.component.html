@@ -1,0 +1,47 @@
+<div class="feedback__section">
+  <div class="feedbacks-sorter">
+    <mat-divider class="line"></mat-divider>
+    <button mat-flat-button> The oldest</button>
+    <button mat-flat-button disabled> The recent</button>
+    <mat-divider class="line"></mat-divider>
+  </div>
+
+  <Form [formGroup]="feedbackForm" class="form">
+    <mat-form-field appearance="fill">
+      <mat-label>Username</mat-label>
+      <input matInput type="text" placeholder="bob" [formControl]="name">
+      <mat-error *ngIf="name.invalid">You must enter your name</mat-error>
+    </mat-form-field>
+
+    <mat-form-field appearance="fill">
+      <mat-label>Your feedback</mat-label>
+      <textarea matInput type="text" [formControl]="newFeedback"></textarea>
+      <mat-error *ngIf="newFeedback.invalid">You must enter a value</mat-error>
+    </mat-form-field>
+    <button mat-flat-button color="primary"
+            [innerHTML]=" '<p>Send</p>'| StyleClass: 'font-size: 1.2rem; color: #ffffff'" class="send-button"></button>
+  </Form>
+
+  <mat-divider class="feedbacks__separator"></mat-divider>
+
+
+  <div class="feedbacks" *ngIf="feedbacks;else noFeedbacks">
+    <mat-card class="feedback" *ngFor="let feedback of feedbacks">
+      <mat-card-header>
+        <div mat-card-avatar class="user-profile-icon"></div>
+        <mat-card-title [innerHTML]="feedback.name"></mat-card-title>
+        <mat-card-subtitle>
+          <img src="./../../assets/reply-icon.png" width="12rem">
+          respond
+        </mat-card-subtitle>
+      </mat-card-header>
+      <mat-card-content [innerHTML]="feedback.message"></mat-card-content>
+    </mat-card>
+  </div>
+
+  <ng-template #noFeedbacks>
+    <h2 class="no-feedback-message">No feedbacks yet</h2>
+  </ng-template>
+</div>
+
+
