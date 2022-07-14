@@ -4,11 +4,14 @@
   </div>
 
   <mat-card class="description">
-    <mat-card-title [innerHTML]="titleText | safeHtml" class="title"></mat-card-title>
-    <mat-card-content [innerHTML]="descriptionText  | safeHtml" class="content"></mat-card-content>
+    <mat-card-title [innerHTML]="titleText | StyleClass: 'font-size: 3rem'" class="title"></mat-card-title>
+    <mat-card-content [innerHTML]="descriptionText | StyleClass: 'font-size: 1.5rem'"
+                      class="content"></mat-card-content>
     <mat-card-actions class="actions">
-      <button mat-flat-button color="primary" [innerHTML]="buttonText.login | safeHtml"></button>
-      <button mat-flat-button color="primary" [innerHTML]="buttonText.signup | safeHtml"></button>
+      <button mat-flat-button color="primary"
+              [innerHTML]="buttonText.login | StyleClass: 'font-size: 1.5rem; color: #ffffff'"></button>
+      <button mat-flat-button color="primary"
+              [innerHTML]="buttonText.signup | StyleClass: 'font-size: 1.5rem; color: #3f51b5' "></button>
     </mat-card-actions>
   </mat-card>
 </div>

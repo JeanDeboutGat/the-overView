@@ -1,7 +1,7 @@
 <mat-sidenav-container class="blogs-sidenav__container">
   <mat-sidenav-content class="blogs">
 
-    <app-blog-summary class="app-blog" [routerLink]="['/blog',i]" *ngFor="let blog of blogs; let i = index"
+    <app-blog-summary class="app-blog-summary" [routerLink]="['/blog',i]" *ngFor="let blog of blogs; let i = index"
                       [title]="blog.title"
                       [description]="blog.description"
                       [image]="blog.image">

@@ -16,8 +16,6 @@ interface Formation {
 export class FormationsComponent implements OnInit {
   formations: Formation[] = [];
 
-  constructor() {}
-
   ngOnInit(): void {
     let formation: Formation = {
       title: 'Basic concepts of angular',
