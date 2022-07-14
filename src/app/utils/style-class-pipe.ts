@@ -7,12 +7,12 @@ import { DomSanitizer, SafeHtml } from '@angular/platform-browser';
 export class StyleClassPipe implements PipeTransform {
   constructor(private sanitizer: DomSanitizer) {}
 
-  transform(html: string, styleSelector: string, styleValue: string): SafeHtml {
-    const style = ` style = "${styleSelector}: ${styleValue};"`;
+  transform(html: any, style: string): SafeHtml {
+    const elementStyle = ` style = "${style};"`;
     const indexPosition = html.indexOf('>');
     const newHtml = [
       html.slice(0, indexPosition),
-      style,
+      elementStyle,
       html.slice(indexPosition),
     ].join('');
     return this.sanitizer.bypassSecurityTrustHtml(newHtml);
