@@ -1,0 +1,30 @@
+<mat-card class="title-and-description__container"
+          [ngStyle]=" selected && {'background-color': '#0000000a','box-shadow':'none'} || null">
+  <mat-card-header>
+    <div mat-card-avatar class="user-profile-icon"></div>
+    <mat-card-title>Why overrides in package.json does not work?</mat-card-title>
+    <mat-card-subtitle>
+      <mat-chip-list class="technologies">
+        <mat-chip>angular</mat-chip>
+        <mat-chip>node</mat-chip>
+      </mat-chip-list>
+    </mat-card-subtitle>
+  </mat-card-header>
+
+  <div class="right-side">
+    <mat-card-actions>
+      <div class="likes">
+        <mat-icon>thumb_up</mat-icon>
+        <span> 5</span>
+      </div>
+      <div class="comments">
+        <mat-icon>mode_comment</mat-icon>
+        <span> 5</span>
+      </div>
+    </mat-card-actions>
+    <mat-card-footer class="date mat-caption">
+      Post on 20th september 2022
+    </mat-card-footer>
+  </div>
+
+</mat-card>

@@ -1,0 +1,32 @@
+<mat-sidenav-container class="forums-sidenav__container">
+  <mat-sidenav-content class="forums">
+    <ng-container *ngFor="let forum of forums; let i = index">
+      <app-forum-summary *ngIf="i==0; else other" [title]="forum.title" [technologies]="forum.technologies"
+                         [likes]="forum.likes" [feedbacksNumber]="forum.feedbacksNumber"
+                         [date]="forum.date" [selected]="true"></app-forum-summary>
+      <ng-template #other>
+        <app-forum-summary [title]="forum.title" [technologies]="forum.technologies"
+                           [likes]="forum.likes" [feedbacksNumber]="forum.feedbacksNumber"
+                           [date]="forum.date" [selected]="false"></app-forum-summary>
+      </ng-template>
+    </ng-container>
+  </mat-sidenav-content>
+  <mat-sidenav mode="side" position="end" opened class="forum-add-subject">
+    <button mat-flat-button>
+      <mat-icon>add</mat-icon>
+      <span [style]="'color:white'">  Add a New Subject</span>
+      <!--TODO IMPROVE STYLE IMPLEMENTATION!-->
+    </button>
+
+    <mat-selection-list #subjectsRef [multiple]="false">
+      <mat-list-option *ngFor="let subject of subjects" [value]="subject">
+        <mat-icon *ngIf="subjectsRef.selectedOptions.selected[0]?.value!= subject;else other">radio_button_unchecked
+        </mat-icon>
+        <ng-template #other>
+          <mat-icon>radio_button_checked</mat-icon>
+        </ng-template>
+        {{subject}}
+      </mat-list-option>
+    </mat-selection-list>
+  </mat-sidenav>
+</mat-sidenav-container>

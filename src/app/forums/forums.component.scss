@@ -1,0 +1,35 @@
+.forums-sidenav__container {
+  width: 100vw;
+  height: 100vw;
+  margin: 2rem 0;
+}
+
+.forum-add-subject {
+  width: 30vw;
+}
+
+.forum-add-subject {
+  button {
+    margin-left: 1rem;
+    background-color: #0066CC;
+    color: #ffffff;
+    font-weight: bold;
+    padding: 0.5rem 1.5rem;
+
+    mat-icon {
+      color: white !important;
+    }
+  }
+
+  mat-list {
+    mat-icon {
+      margin-right: 0.5em;
+    }
+  }
+}
+
+:host ::ng-deep .mat-list-base .mat-list-item .mat-list-text {
+  display: flex;
+  flex-direction: row !important;
+}
+

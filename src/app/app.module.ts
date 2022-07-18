@@ -24,6 +24,10 @@ import { FeedbackComponent } from './feedback/feedback.component';
 import {MatFormFieldModule} from "@angular/material/form-field";
 import {MatInputModule} from "@angular/material/input";
 import {ReactiveFormsModule} from "@angular/forms";
+import { ForumsComponent } from './forums/forums.component';
+import { ForumSummaryComponent } from './forums/forum-summary/forum-summary.component';
+import {MatChipsModule} from "@angular/material/chips";
+import {MatListModule} from "@angular/material/list";
 
 const appRoutes: Routes = [{ path: '', component: NavigationBarComponent }];
 
@@ -40,6 +44,8 @@ const appRoutes: Routes = [{ path: '', component: NavigationBarComponent }];
     BlogDetailsComponent,
     StyleClassPipe,
     FeedbackComponent,
+    ForumsComponent,
+    ForumSummaryComponent,
   ],
   imports: [
     BrowserModule,
@@ -55,6 +61,8 @@ const appRoutes: Routes = [{ path: '', component: NavigationBarComponent }];
     MatFormFieldModule,
     MatInputModule,
     ReactiveFormsModule,
+    MatChipsModule,
+    MatListModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
