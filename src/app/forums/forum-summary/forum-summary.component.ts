@@ -11,7 +11,7 @@ export class ForumSummaryComponent {
   @Input() public technologies!: string[];
   @Input() public likes!: number;
   @Input() public feedbacksNumber!: number;
-  @Input() public date!: string;
+  @Input() public date!: Date;
   @Input() public selected!: boolean;
 
   @HostListener('mouseenter')

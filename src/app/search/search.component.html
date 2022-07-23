@@ -1,0 +1,11 @@
+<Form class="search-form">
+  <mat-form-field class="search-field" appearance="outline">
+    <input type="text" placeholder="Search a content..." aria-label="content" matInput [formControl]="searchControl"
+           [matAutocomplete]="auto">
+    <mat-autocomplete #auto="matAutocomplete">
+      <mat-option *ngFor="let option of filteredOptions | async" [value]="option">
+        <a [routerLink]="option.path" [innerHtml]="option.title"></a>
+      </mat-option>
+    </mat-autocomplete>
+  </mat-form-field>
+</Form>

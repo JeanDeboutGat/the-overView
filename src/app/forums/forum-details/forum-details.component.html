@@ -1,0 +1,9 @@
+<div class="forum-details">
+  <div class="header">
+    <div class="title" [innerHTML]="forum.title
+     | StyleClass: 'font-size: 2rem'"></div>
+    <div class="date mat-caption"> Published: {{forum.date.toLocaleString()}}</div>
+  </div>
+  <div class="content" [innerHTML]="forum.content"></div>
+  <app-feedback [feedbacks]="forum.feedbacks"></app-feedback>
+</div>

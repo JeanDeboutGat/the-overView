@@ -28,6 +28,10 @@ import { ForumsComponent } from './forums/forums.component';
 import { ForumSummaryComponent } from './forums/forum-summary/forum-summary.component';
 import {MatChipsModule} from "@angular/material/chips";
 import {MatListModule} from "@angular/material/list";
+import { ForumDetailsComponent } from './forums/forum-details/forum-details.component';
+import { ForumCreateComponent } from './forums/forum-create/forum-create.component';
+import { SearchComponent } from './search/search.component';
+import {MatAutocompleteModule} from "@angular/material/autocomplete";
 
 const appRoutes: Routes = [{ path: '', component: NavigationBarComponent }];
 
@@ -46,6 +50,9 @@ const appRoutes: Routes = [{ path: '', component: NavigationBarComponent }];
     FeedbackComponent,
     ForumsComponent,
     ForumSummaryComponent,
+    ForumDetailsComponent,
+    ForumCreateComponent,
+    SearchComponent,
   ],
   imports: [
     BrowserModule,
@@ -63,6 +70,7 @@ const appRoutes: Routes = [{ path: '', component: NavigationBarComponent }];
     ReactiveFormsModule,
     MatChipsModule,
     MatListModule,
+    MatAutocompleteModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
